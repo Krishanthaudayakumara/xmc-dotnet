@@ -1,0 +1,11 @@
+﻿@model Sitecore.AspNetCore.Starter.Models.TitleAndText
+
+@if (Model.Title != null)
+{
+    <h2>@Model.Title.Value</h2>
+}
+
+@if (Model.Text != null)
+{
+    @Html.Raw(Model.Text.Value)
+}
